@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Header--Font: 'Press Start 2P', cursive;
+    --Header--Background: #125B50;
+    --All--Font: 'Roboto', sans-serif;
+    --Background--Container: #2C3639;
+    --Font--Color: rgb(255, 255, 255);
+    --Black: rgb(0, 0, 0);
+    --Box--Color: rgb(237, 228, 224);
+    --Error: rgb(246, 9, 9);
+    --Border--Radius: .4rem;
+}
+
+
+
+
+.container {
+    position: relative;
+    color: var(--Font--Color);
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Background--Container);
+
+    .MainDiv {
+        height: 100vh;
+        width: 100%;
+
+        .GameName {
+            text-align: center;
+            justify-content: center;
+            background-color: #125B50;
+            height: 15rem;
+            width: 68.3%;
+            border-radius: var(--Border--Radius);
+            margin-left: 16.3%;
+            overflow: hidden;
+
+            h2 {
+                margin-top: 5%;
+                font-family: var(--Header--Font);
+                font-size: 4rem;
+            }
+
+            h4 {
+                margin-top: 2%;
+            }
+        }
+
+        .Message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(228, 204, 204);
+            height: 5rem;
+            width: 68.3%;
+            margin-left: 16.3%;
+            border-radius: var(--Border--Radius);
+            color: var(--Error);
+            font-family: var(--All--Font);
+        }
+
+        #NumberDiv {
+            visibility: hidden;
+            margin-top: 4rem;
+            padding-top: 1rem;
+            padding-left: 3%;
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: #125B50;
+            flex-wrap: wrap;
+
+            #N {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: .4rem;
+                height: 6rem;
+                width: 6%;
+                border-radius: var(--Border--Radius);
+                background-color: var(--Box--Color);
+                color: var(--Black);
+                font-family: var(--All--Font);
+                cursor: pointer;
+            }
+        }
+
+        #ButtonSHow {
+            top: 24rem;
+            position: absolute;
+            width: 100%;
+            height: 60%;
+
+            .Rules {
+                height: 50%;
+                width: 100%;
+                text-align: center;
+                font-family: var(--All--Font);
+
+                h2 {
+                    padding-top: 1rem;
+                    font-size: 3rem;
+
+                }
+
+                ol {
+                    margin-top: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .GamesControl {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10%;
+                width: 100%;
+
+                button {
+                    height: 5rem;
+                    cursor: pointer;
+                    width: 15rem;
+                    color: var(--Black);
+                    font-weight: 700;
+                    border: none;
+                    border-radius: var(--Border--Radius);
+                    background-color: #22ff00;
+
+                    &:is(:hover, :focus) {
+                        background-color: #00ffcc;
+                        outline: .2rem solid #00ffcc;
+                        outline-offset: .2rem;
+                    }
+                }
+            }
+        }
+
+        #Congratulation {
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 24rem;
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            h1 {
+                font-family: var(--All--Font);
+                font-size: 3rem;
+            }
+
+            .con {
+                height: 15rem;
+                text-align: center;
+
+                #Congra {
+                    margin-top: 4rem;
+                    height: 5rem;
+                    cursor: pointer;
+                    width: 15rem;
+                    color: var(--Black);
+                    font-weight: 700;
+                    border: none;
+                    border-radius: var(--Border--Radius);
+                    background-color: #ffa600;
+
+                    &:is(:hover, :focus) {
+                        background-color: #ffb300;
+                        outline: .2rem solid #ff9d00;
+                        outline-offset: .2rem;
+                    }
+                }
+            }
+        }
+
+        #Lose {
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 24rem;
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            h1 {
+                font-family: var(--All--Font);
+                font-size: 3rem;
+            }
+
+            .con {
+                height: 15rem;
+                text-align: center;
+
+                #Loss {
+                    margin-top: 4rem;
+                    height: 5rem;
+                    cursor: pointer;
+                    width: 15rem;
+                    color: var(--Black);
+                    font-weight: 700;
+                    border: none;
+                    border-radius: var(--Border--Radius);
+                    background-color: #ffa600;
+
+                    &:is(:hover, :focus) {
+                        background-color: #ffb300;
+                        outline: .2rem solid #ff9d00;
+                        outline-offset: .2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

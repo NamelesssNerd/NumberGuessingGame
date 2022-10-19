@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>NumberGuessingGame</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="MainDiv">
+            <div class="GameName">
+                <h2>NumberGuessGame</h2>
+                <h4 id="Time"></h4>
+            </div>
+            <audio src="./sound/wrong.wav" id="Wrong"></audio>
+            <audio src="./sound/Welcome.mp3" id="Welcome"></audio>
+            <audio src="./sound/Congratulation.mp3" id="Won"></audio>
+            <audio src="./sound/Lose.mp3" id="Haryo"></audio>
+            <div class="Message">
+                <h3 id="Message"></h3>
+            </div>
+            <div id="NumberDiv"></div>
+            <div id="ButtonSHow">
+                <div class="Rules">
+                    <h2>Rules For Games:</h2>
+                    <ol>
+                        <li>You Will Get 1 Minutes For Games.</li>
+                        <li>You Will Get Only 10 Chances.</li>
+                    </ol>
+                </div>
+                <div class="GamesControl">
+                    <button id="Start">Start</button>
+                </div>
+            </div>
+            <div id="Congratulation">
+                <div class="con">
+                    <h1>Congratulation you Won the Game.</h1>
+                    <button id="Congra">OK</button>
+                </div>
+            </div>
+            <div id="Lose">
+                <div class="con">
+                    <h1 id="Reason">Lost The Game.</h1>
+                    <button id="Loss">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
